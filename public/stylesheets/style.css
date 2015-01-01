@@ -16,11 +16,31 @@ a {
 }
 
 .container{
-	background-image: url('/images/disconnected.jpg');
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+	
 	height: 100%;
 	width: 100%;
 	position: relative;
+}
+.overlay{
+	position: absolute;
+	background-image: url('/images/disconnected.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+.video{
+	height: 100%;
+	width: 100%;
+	text-align: center
+}
+
+.video video{
+	height: 100%;
+	width: auto;
+	z-index: 1;
+	margin: 0 auto;
+	text-align: center
 }
